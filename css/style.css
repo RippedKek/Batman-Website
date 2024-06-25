@@ -1,6 +1,6 @@
 @import 'utility.css';
 
-:root{
+:root {
     --black: #000000;
     --nav-bar: rgba(43, 43, 43, 0.523);
     --content-bg: #1c1c1c;
@@ -11,18 +11,22 @@
     --white: #ffffff;
 }
 
-*{
+* {
     font-family: 'Bangers', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+body {
+    overflow-x: hidden;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
-header{
+header {
     background: url('../images/gotham-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,37 +34,37 @@ header{
     overflow: hidden;
 }
 
-.container{
+.container {
     padding: 0 15px;
     margin: 0 auto;
 }
 
-.container nav{
+.container nav {
     width: 100%;
     height: 60px;
     background: linear-gradient(180deg, rgba(43, 43, 43, 1), rgba(43, 43, 43, 0));
 }
 
-header .container .left{
+header .container .left {
     align-items: center;
 }
 
-header .container .left .logo{
+header .container .left .logo {
     height: 50px;
     margin-left: 2rem;
     cursor: pointer;
 }
 
-header .container .right{
+header .container .right {
     align-items: center;
     margin-right: 2rem;
 }
 
-header .container .right .nav-menu{
+header .container .right .nav-menu {
     gap: 2.5rem;
 }
 
-header .container .right .nav-menu a{
+header .container .right .nav-menu a {
     text-decoration: none;
     color: var(--black);
     font-size: 1.7rem;
@@ -68,11 +72,11 @@ header .container .right .nav-menu a{
     transition: all 300ms ease;
 }
 
-header .container .right .nav-menu a:hover{
+header .container .right .nav-menu a:hover {
     color: var(--white);
 }
 
-header .hero{
+header .hero {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -80,7 +84,7 @@ header .hero{
     position: relative;
 }
 
-header .hero h1{
+header .hero h1 {
     font-size: 10rem;
     -webkit-text-stroke-width: 0.01px;
     -webkit-text-stroke-color: var(--white);
@@ -88,7 +92,7 @@ header .hero h1{
     text-shadow: 0 9px black;
 }
 
-header .hero span{
+header .hero span {
     position: absolute;
     right: 24.3%;
     top: 11.7rem;
@@ -97,13 +101,13 @@ header .hero span{
     font-size: 1.4rem;
 }
 
-header .hero .batman{
+header .hero .batman {
     position: absolute;
     top: 35%;
     z-index: 3;
 }
 
-header .hero .boom{
+header .hero .boom {
     height: 150px;
     position: absolute;
     right: 20%;
@@ -112,34 +116,34 @@ header .hero .boom{
     transform: rotate(20deg);
 }
 
-section.about{
+section.about {
     background: var(--header);
     padding-bottom: 8rem;
     position: relative;
 }
 
-section.about .container{
+section.about .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-section.about .batman{
+section.about .batman {
     position: absolute;
     transform: scale(0.3);
     left: 45rem;
     top: -5rem;
 }
 
-section.about .section-heading{
+section.about .section-heading {
     margin-top: 5rem;
     font-size: 5rem;
     -webkit-text-stroke: 0.08px white;
     text-shadow: 0 9px black;
 }
 
-section.about .container .info-card{
+section.about .container .info-card {
     max-width: 70%;
     display: flex;
     justify-content: space-evenly;
@@ -149,22 +153,20 @@ section.about .container .info-card{
     border-radius: 20px;
     margin-top: 5rem;
     position: relative;
-    background-image: radial-gradient(
-      circle at center,
-      black 0.25rem,
-      transparent 0
-    ), radial-gradient(circle at center, black 0.25rem, transparent 0);
+    background-image: radial-gradient(circle at center,
+            black 0.25rem,
+            transparent 0), radial-gradient(circle at center, black 0.25rem, transparent 0);
     background-size: 1.3rem 1.3rem;
     background-position: 0 0, 0.65rem 0.65rem;
 }
 
-section.about .container .info-card .bruce{
+section.about .container .info-card .bruce {
     height: 250px;
     margin: 3rem;
     border: 5px solid black;
 }
 
-section.about .container .info-card .hover-content{
+section.about .container .info-card .hover-content {
     position: absolute;
     top: 1rem;
     left: 17rem;
@@ -172,62 +174,63 @@ section.about .container .info-card .hover-content{
     transition: all 300ms ease-in-out;
 }
 
-section.about .container .info-card .hover-content .bubble{
+section.about .container .info-card .hover-content .bubble {
     height: 100px;
 }
 
-section.about .container .info-card .hover-content p{
+section.about .container .info-card .hover-content p {
     position: absolute;
     top: 2.35rem;
     left: 1.2rem;
 }
 
-section.about .container .info-card .bruce:hover ~ .hover-content{
+section.about .container .info-card .bruce:hover~.hover-content {
     opacity: 1;
 }
 
-section.about .container .info-card .content{
+section.about .container .info-card .content {
     width: 40%;
     color: var(--highlight);
     -webkit-text-stroke: 0.1px black;
 }
 
-section.about .container .info-card .content h1{
+section.about .container .info-card .content h1 {
     font-size: 3rem;
     letter-spacing: 2px;
 }
 
-section.about .container .info-card .content p{
+section.about .container .info-card .content p {
     font-size: 1rem;
     line-height: 1.2;
     text-align: justify;
 }
 
-section.gears{
+section.gears {
     background: url('../images/gotham.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;  
+    background-position: center;
+    height: 700px;
 }
 
-section.gears .container{
+section.gears .container {
     text-align: center;
 }
 
-section.gears .section-heading{
+section.gears .section-heading {
     font-size: 5rem;
     -webkit-text-stroke: 0.08px white;
     text-shadow: 0 9px black;
     padding-top: 3rem;
 }
 
-section.gears .container .slider{
+section.gears .container .slider {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
 }
 
-section.gears .container .slider .slide{
+section.gears .container .slider .slide {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,41 +242,107 @@ section.gears .container .slider .slide{
     border-radius: 40px;
 }
 
-section.gears .container .slider .slide .content{
+section.gears .container .slider .slide .content {
     width: 50%;
     margin-top: 2rem;
     color: var(--highlight);
 }
 
-section.gears .container .slider .slide img{
+section.gears .container .slider .slide img {
     width: 300px;
     margin-bottom: 2rem;
 }
 
-section.gears .slider-dots .dots{
+section.gears .slider-dots .dots {
     list-style-type: none;
-    display: flex!important;
+    display: flex !important;
     justify-content: center;
 }
 
-section.gears .slider-dots{
+section.gears .slider-dots {
     margin-top: 1rem;
 }
 
-section.gears .slider-dots button{
+section.gears .slider-dots button {
     font-size: 0;
     width: 8px;
     height: 5px;
     margin-right: 0.3rem;
     border: none;
     outline: none;
-    background: var(--header);
+    background: var(--white);
     border-radius: 50px;
     cursor: pointer;
     transition: all 500ms ease;
 }
 
-section.gears .dots li.slick-active button{
+section.gears .dots li.slick-active button {
     background: var(--highlight);
     width: 20px;
+}
+
+section.contact{
+    background: rgb(20, 19, 19);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.flip-card {
+    background-color: black;
+    width: 243px;
+    height: 364px;
+    perspective: 1000px;
+    box-shadow: 0 0 100px black;
+    border-radius: 20px;
+}
+
+.flip-card img{
+    width: 243px;
+    border-radius: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 20px;
+}
+
+.flip-card-back {
+    background-color: var(--header);
+    color: var(--highlight);
+    transform: rotateY(180deg);
+    padding: 150px 0;
+    letter-spacing: 3px;
+    border: 1px solid var(--highlight);
+    border-radius: 20px;
+    background-image: radial-gradient(circle at center,
+            black 0.25rem,
+            transparent 0), radial-gradient(circle at center, black 0.25rem, transparent 0);
+    background-size: 1.3rem 1.3rem;
+    background-position: 0 0, 0.65rem 0.65rem;
 }
