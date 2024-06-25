@@ -132,7 +132,7 @@ section.about .batman{
     top: -5rem;
 }
 
-section.about .container .section-heading{
+section.about .section-heading{
     margin-top: 5rem;
     font-size: 5rem;
     -webkit-text-stroke: 0.08px white;
@@ -201,4 +201,79 @@ section.about .container .info-card .content p{
     font-size: 1rem;
     line-height: 1.2;
     text-align: justify;
+}
+
+section.gears{
+    background: url('../images/gotham.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+section.gears .container{
+    text-align: center;
+}
+
+section.gears .section-heading{
+    font-size: 5rem;
+    -webkit-text-stroke: 0.08px white;
+    text-shadow: 0 9px black;
+    padding-top: 3rem;
+}
+
+section.gears .container .slider{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+section.gears .container .slider .slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--black);
+    border-radius: 40px;
+}
+
+section.gears .container .slider .slide .content{
+    width: 50%;
+    margin-top: 2rem;
+    color: var(--highlight);
+}
+
+section.gears .container .slider .slide img{
+    width: 300px;
+    margin-bottom: 2rem;
+}
+
+section.gears .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+section.gears .slider-dots{
+    margin-top: 1rem;
+}
+
+section.gears .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--header);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+section.gears .dots li.slick-active button{
+    background: var(--highlight);
+    width: 20px;
 }
